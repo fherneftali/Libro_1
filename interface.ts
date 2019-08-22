@@ -11,4 +11,4 @@ function area(shape: Shape){
 }
  console.log( area( {name: "rectangulo", width: 30, height: 15}));
  console.log( area( {name: "cuadrado", width: 30, height: 30, color: "blue"}));
- console.log( area( {width: 30, height: 15}));
+ //console.log( area( {width: 30, height: 15}));
