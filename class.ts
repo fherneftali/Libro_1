@@ -1,8 +1,8 @@
 class Shape{
     area: number;
-    color: string;
+    private color: string;
      
-    constructor (name: string, width: number, height: number){
+    constructor (public name: string, width: number, height: number){
         this.area = width * height;
         this.color = "pink";
     };
@@ -12,5 +12,26 @@ class Shape{
     }
 }
 
-var cube = new Shape("", 30,30);
+var cuadro = new Shape("cuadrado", 30,30);
+console.log(cuadro.shoutout());
+
+class Shape3D extends Shape{
+    volume: number;
+
+    constructor (public name: string, width: number, height:number, length:number){
+        super( name, width, height);
+        this.volume= length * this.area;
+    };
+
+    shoutout(){
+        return "Soy un " + this.name + " con un volumen de " + this.volume + " cm³";
+    }
+
+    superShout(){
+        return super.shoutout();
+    }
+}
+
+var cube = new Shape3D("cubo", 30,30,30);
 console.log(cube.shoutout());
+console.log(cube.superShout());
