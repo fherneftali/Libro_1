@@ -9,3 +9,5 @@ var Person = /** @class */ (function () {
 }());
 var personA = new Person("Fher");
 personA.introduceSelf();
+personA.name = "Mindy";
+personA.introduceSelf();
