@@ -8,7 +8,7 @@ function randomStrElem(theArray: string[]): string{
     return theArray[randomIndex];
 }
 
-function randomElem(theArray: any[]): any{
+function randomElem<T>(theArray: T[]): T{
     let randomIndex = Math.floor(Math.random()*theArray.length);
     return theArray[randomIndex];
 }
@@ -17,4 +17,4 @@ let positions: number[] = [103, 458, 472, 458];
 let randomPosition: number= randomElem(positions);
 
 let colors: string[] = ['violet', 'indigo', 'blue', 'green'];
-let randomColor:string = randomElem(colors);
+let randomColor: string = randomElem(colors);
