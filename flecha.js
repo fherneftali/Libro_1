@@ -1,3 +1,4 @@
+"use strict";
 var shape = {
     name: "rectangulo",
     popup: function () {

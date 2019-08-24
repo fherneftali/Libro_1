@@ -1,3 +1,4 @@
+"use strict";
 var a = 12;
 var b = 17;
 function showProduct(first, second) {

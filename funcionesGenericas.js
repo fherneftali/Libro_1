@@ -1,3 +1,4 @@
+"use strict";
 function printName(theInput) {
     console.log("Mi nombre es " + theInput.name);
 }

@@ -1,3 +1,4 @@
+"use strict";
 function area(shape) {
     var area = shape.width * shape.height;
     return "Soy un " + shape.name + " " + shape.color + " con un area de " + area + " cm²";
